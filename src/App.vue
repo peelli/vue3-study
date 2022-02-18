@@ -5,8 +5,12 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div>
+    <router-link to="/">首页</router-link>
+    |
+    <router-link to="/about">关于</router-link>
+    <router-view></router-view>
+  </div>
 </template>
 
 <style>
